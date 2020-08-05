@@ -5,3 +5,120 @@
 .nav-item {
     margin-right: 3rem
 }
+
+/*NDS stylings*/
+.blue-bg {
+    background: #00529c;
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/*home section*/
+.home__section--content {
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.home__section--content ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home__section--content li {
+    width: auto;
+    margin: auto auto 10px;
+}
+
+
+/*downspout callout banner */
+.padding-zero {
+    padding: 0;
+}
+
+.banner-anchor-wrapper .banner-learnmore {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 17px;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 12px 40px;
+}
+
+.blue-bg {
+    background: #00529c;
+}
+
+h2.banner-text-title {
+    font-family: 'Ubuntu';
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.banner-text-desc {
+    text-align: left;
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 17px;
+}
+
+.banner-text {
+    margin-left: 5px;
+}
+
+.banner-anchor-wrapper {
+    padding: 20px 0;
+    text-align: left;
+    margin-left: 10px;
+}
+
+@media(max-width:1300px) {
+    .banner-text {
+        margin-left: 25px;
+    }
+
+    .banner-anchor-wrapper {
+        margin-left: 15px;
+    }
+}
+
+@media(min-width:768px) {
+    .banner-anchor-wrapper {
+        padding-top: 90px;
+    }
+
+    .banner-text {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:1024px) {
+    .banner-text {
+        padding-top: 11px;
+    }
+
+    .banner-anchor-wrapper {
+        padding: 40px 0;
+    }
+}
+
+@media(max-width:750px) {
+    .banner-anchor-wrapper {
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+}
+
+/* downspout callout banner css ends*/ 
