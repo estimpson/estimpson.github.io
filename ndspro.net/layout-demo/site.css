@@ -10,12 +10,55 @@
 .blue-bg {
     background: #00529c;
 }
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
 
 /*home section*/
+body {
+    color: #3e3d3c;
+    font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home__section--6grid {
+    text-align: center;
+}
+
+.home__section--heading {
+    padding-top: 60px;
+    font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    .home__section--heading h2 {
+        padding: 10px;
+        color: #00529c;
+        font-size: 47px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 30px;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .home__section--heading .sub-title {
+        color: #3e3d3c;
+        font-family: 'Gotham A', 'Gotham B', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 20px;
+        margin: 0 auto 20px;
+        max-width: 650px;
+        font-size: 19px;
+    }
+
 .home__section--content {
     max-width: 1440px;
     padding-left: 20px;
@@ -25,19 +68,18 @@
     margin-right: 15px;
 }
 
-.home__section--content ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    .home__section--content ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-.home__section--content li {
-    width: auto;
-    margin: auto auto 10px;
-}
-
+    .home__section--content li {
+        width: auto;
+        margin: auto auto 10px;
+    }
 
 /*downspout callout banner */
 .padding-zero {
@@ -46,7 +88,6 @@
 
 .banner-anchor-wrapper .banner-learnmore {
     color: white;
-    font-family: Ubuntu;
     font-size: 17px;
     border: 2px solid white;
     border-radius: 100px;
@@ -58,7 +99,6 @@
 }
 
 h2.banner-text-title {
-    font-family: 'Ubuntu';
     color: white;
     font-weight: bold;
     font-size: 26px;
@@ -70,12 +110,12 @@ h2.banner-text-title {
 .banner-text-desc {
     text-align: left;
     color: white;
-    font-family: 'Ubuntu';
     font-size: 17px;
 }
 
 .banner-text {
     margin-left: 5px;
+    padding-top: 50px;
 }
 
 .banner-anchor-wrapper {
@@ -121,4 +161,111 @@ h2.banner-text-title {
     }
 }
 
-/* downspout callout banner css ends*/ 
+/* downspout callout banner css ends*/
+
+/* action primary */
+.home__section--6grid .action.primary {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+a.action.primary {
+    margin-top: 10px;
+    float: left;
+    clear: both;
+}
+
+a.action.primary {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button, a.action.primary {
+    border-radius: 100px;
+}
+
+.home__section--6grid figure {
+    position: relative;
+}
+
+.home__section--6grid figure:hover figcaption {
+    background-color: rgba(0,92,156,.7);
+}
+
+.home__section--6grid figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    transition: all ease-in-out .5s;
+    background-color: transparent;
+}
+
+.home__section--6grid figure:hover .action {
+    bottom: 50%;
+    transform: translate(-50%,50%);
+}
+
+.home__section--6grid .action {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    transition: all ease-in-out .5s;
+}
+
+.action.primary {
+    background-image: none;
+    background: #fff;
+    border: 3px solid #00529c;
+    color: #00529c;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Gotham A','Gotham B',Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    padding: 7px 30px;
+    font-size: 1.4rem;
+    line-height: 3.4rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+a:visited, .alink:visited {
+    color: #006bb4;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+a, .alink {
+    color: #006bb4;
+    text-decoration: none;
+}
+
+.home__section--6grid .home__section--content {
+    padding-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.home__section--6grid .home__section--content {
+    padding-top: 30px;
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+
+.home__section > div {
+    text-align: center;
+}
+
+.home__section > div {
+    text-align: center;
+}
