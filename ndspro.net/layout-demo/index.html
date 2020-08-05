@@ -79,51 +79,37 @@
             </ul>
         </div>
     </nav>
-    <div class="bg-light container-fluid login">
-        <div class="container">
-            <div>
-                <form>
-                    <div class="row">
-                        <div class="form-group-condensed col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="bg-light container-fluid login" style="padding: 1em">
+        <div class="d-flex justify-content-center">
+            <form>
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <div class="p-2">
                             <label>
                                 LOGIN OR
                                 <a href="#">SIGN UP</a>
                             </label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="form-group-condensed col-lg-3 col-md-3 col-sm-3 col-xs-7">
-                            <input type="text" class="form-control" id="userName" placeholder="User Name">
+                    <div class="d-flex flex-row">
+                        <div class="p-2">
+                            <input type="text" class="form-control-lg" id="userName" placeholder="User Name">
                         </div>
-                        <div class="form-group-condensed col-lg-3 col-md-3 col-sm-3 col-xs-7">
-                            <input type="password" class="form-control" id="password1" placeholder="Password">
+                        <div class="p-2">
+                            <input type="password" class="form-control-lg" id="password1" placeholder="Password">
                         </div>
-                        <div class="form-group-condensed align-self-end col-lg-2 col-md-2 col-sm-2 col-xs-7">
-                            <button type="submit" class="btn btn-primary login">Log In</button>
-                        </div>
-                    </div>
-                    <div class="form-group form-check form-control-sm">
-                        <input type="checkbox" class="form-check-input" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Remember me</label>
-                    </div>
-                    <div class="row">
-                        <div class="form-group-condensed align-self-end col-lg-4 col-md-4 col-sm-4 col-xs-7">
-                            <label>Learn Where to Buy</label>
-                            <ul style="margin-bottom: 0">
-                                <li>
-                                    <a href="http://www.ndspro.com/where-to-buy-pro">Contractors</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ndspro.com/where-to-buy">Homeowners</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="form-group-condensed align-self-end col-lg-4 col-md-4 col-sm-4 col-xs-7">
-                            <label>For all other inquiries, please use our <a href="http://www.ndspro.com/contact-us">contact us form</a>.</label>
+                        <div class="p-2">
+                            <button type="submit" class="btn-lg btn-primary login">Log In</button>
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div class="d-flex flex-row justify-content-end">
+                        <div class="p-2 ">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" checked="checked">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
     <div class="container">
@@ -182,7 +168,21 @@
                 </p>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <img src="Clearance.png" />
+                <div class="row">
+                    <img src="Clearance.png" />
+                </div>
+                <div>
+                    <label>Learn Where to Buy</label>
+                    <ul style="margin-bottom: 0">
+                        <li>
+                            <a href="http://www.ndspro.com/where-to-buy-pro">Contractors</a>
+                        </li>
+                        <li>
+                            <a href="http://www.ndspro.com/where-to-buy">Homeowners</a>
+                        </li>
+                    </ul>
+                    <label>For all other inquiries, please use our <a href="http://www.ndspro.com/contact-us">contact us form</a>.</label>
+                </div>
             </div>
         </div>
     </div>
