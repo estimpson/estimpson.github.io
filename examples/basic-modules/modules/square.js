@@ -33,11 +33,11 @@ function reportPerimeter(length, listId) {
     list.appendChild(listItem);
 }
 
-function randomSquare(ctx) {
+function drawRandomSquare(ctx) {
     let color1 = random(0, 255);
     let color2 = random(0, 255);
     let color3 = random(0, 255);
-    let color = `rgb(${color1},${color2},${color3})`
+    let color = `rgb(${color1},${color2},${color3})`;
     ctx.fillStyle = color;
 
     let x = random(0, 480);
@@ -54,4 +54,4 @@ function randomSquare(ctx) {
 }
 
 export { name, draw, reportArea, reportPerimeter };
-export default randomSquare;
+export default drawRandomSquare;

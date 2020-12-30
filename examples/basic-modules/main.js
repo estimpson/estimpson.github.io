@@ -1,6 +1,6 @@
 import { create, createReportList } from './modules/canvas.js';
 import { name, draw, reportArea, reportPerimeter } from './modules/square.js';
-import randomSquare from './modules/square.js';
+import drawRandomSquare from './modules/square.js';
 
 let myCanvas = create('myCanvas', document.body, 480, 320);
 let reportList = createReportList(myCanvas.id);
@@ -10,4 +10,4 @@ reportArea(square1.length, reportList);
 reportPerimeter(square1.length, reportList);
 
 // Use the default
-let square2 = randomSquare(myCanvas.ctx);
+let square2 = drawRandomSquare(myCanvas.ctx);
