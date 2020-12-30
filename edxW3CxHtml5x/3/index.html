@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Module 3</title>
+    <link rel="stylesheet" href="/3/site.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Rules: selectors and declarations
+        </h1>
+        <p>
+            At its simplest, CSS is just a list of <em>rules</em>.
+            Each <em>rule</em> consists of a <em>selector</em> and
+            a <em>declaration</em>. Here is an example:
+        </p>
+        <code>p { font-size: 12px; color: #2233ff; }</code>
+    </header>
+    <section>
+        <h2>
+            Selector
+        </h2>
+        <p>
+            In the above, the <em>selector</em> is <strong>p</strong>.
+            When a selector appears unprefixed by any punctuation, then
+            it is assumed to match to an HTML tag. Thus, the
+            <strong>p</strong> selector will apply the CSS rule to all
+            &lt;p&gt; tags in the document.
+        </p>
+        <p>
+            We will cover more selector possibilities in the future.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Declaration
+        </h2>
+        <p>
+            The <em>declaration</em> part of a CSS rule opens
+            and closes with curly braces: <strong>{ }</strong> And
+            between them, you can put any number of <em>property value</em>
+            pairs.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Properties and values
+        </h2>
+        <p>
+            There are hundreds of different visual properties that may
+            be set via CSS. And each property has a range of possible
+            values that it can be set to. Syntactically, property value
+            pairs are simple. Each pair consists of a <em>property</em>,
+            followed by a colon <strong>:</strong> followed by a <em>value</em>
+            and terminated by a semicolon <strong>;</strong>
+        </p>
+        <code>
+            font-size: 12px;
+        </code>
+    </section>
+    <section>
+        <h2>
+            Best practices
+        </h2>
+        <p>
+            In the example above, the entire CSS rule is written on one line.
+            This is not uncommon when thedeclaration of the CSS rule
+            only has one property. If a CSS rule has several properties, then
+            it should be written to use one line per property value pair.
+            For example:
+        </p>
+        <code>
+            <ol>
+            <li>p {</li>
+            <li>&nbsp;&nbsp;font-size: 12px;</li>
+            <li>&nbsp;&nbsp;line-height: 15px;</li>
+            <li>&nbsp;&nbsp;color: #2233ff;</li>
+            <li>}</li>
+            </ol>
+        </code>
+    </section>
+</body>
+
+</html>
