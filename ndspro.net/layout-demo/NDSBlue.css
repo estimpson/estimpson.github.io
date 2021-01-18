@@ -1,0 +1,280 @@
+/**************************************************************************************************************
+ * Reset
+ *************************************************************************************************************
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border:0; outline: 0;  }
+/* 
+Set the width on the containers and then set margin and padding on the elements within them.
+The purple used in the background graphic closely matches Royal Breeze (S-H-560) on behr.com
+light blue dbe3e4
+green 2f7985
+blue green b1dae5
+dark green 364038
+gray 8793ad
+brown 4c3835
+blue gray 5771b2
+LoVeHAte = Link, Visited, Hover, Active
+Try these out sometime.
+http://jigsaw.w3.org/css-validator/
+http://floele.flyspray.org/csstidy//css_optimiser.php
+/**************************************************************************************************************
+* Globals
+**************************************************************************************************************/
+html { height: 100% }
+html, body { font-family: Helvetica, "Lucida Sans Unicode" , "Lucida Grande" ,Verdana, Arial, Helvetica, sans-serif; }
+body { margin: 0; padding: 0; }
+body { font-size: 12px; background-color: #fff; }
+strong, em, b, i, .bold { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+h1 { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color:#0057a8;}
+h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", Helvetica, sans-serif; color: #0057a8; display: block; margin: 10px 0px 10px; padding: 0px; }
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.1em; }
+h5 { font-size: 0.9em; }
+h6 { font-size: 0.8em; }
+.bold { font-weight:bold; }
+/*table, td { font-size: 1em; }*/
+p { margin: 0 0 1em 0; }
+input, select, textarea { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 1em; }
+form { display: inline; }
+label { vertical-align: middle; }
+li { margin: 10px 10px 10px 40px; }
+th { white-space: nowrap; font-weight: bold; }
+/*td { vertical-align: top; }*/
+a, a:link, a:visited { /* Can't set the color here. Messes up the menu bar. color: #123456;*/ text-decoration: none; }
+a:hover { color: #123456; text-decoration: underline; }
+a:active { color: #123456; text-decoration: underline; }
+a:active, a:focus { outline: 0; }
+a.email { color: #2771bb; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+blockquote { margin: 10px 50px; }
+.dxrpControl td.dxrp { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.clear { clear: both; }
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.centertable { margin: auto auto; }
+.righttable { margin: auto 0px; }
+.paddedtable td { padding: 2px; vertical-align: middle; }
+.lefttable { margin: 0px auto; }
+/**************************************************************************************************************
+ * Layout
+ **************************************************************************************************************/
+#allContent { margin: auto auto; width:990px; background-color: #fff; }
+#allContentWide { margin: auto auto; width:90%; background-color: #fff;}
+#topContent { background-color: #fff; padding: 0px; }
+#topLeft { float: left; width: 314px; height: 90px; }
+#topRightTop { float: right; width: 664px; height: 50px; text-align: right; vertical-align: top; }
+#topRightBottom { float: right; width: 664px; height: 40px; text-align: right; vertical-align: bottom; }
+/*#topBottom { clear: both; background-image: url('Images/strip.png'); height: 25px; padding: 1px 1px; text-align: left; background-repeat: repeat-x; }*/
+#topBottom { clear: both; }
+#mainContent { padding: 0px; /*background-image: url(Images/contentBG.png);  background-repeat: repeat-x;*/ margin: 0 auto; }
+#mainContentLeft { float: left; width: 210px; text-align: left; padding: 5px 5px 0px 5px; }
+#mainContentCenter { padding: 0px 190px 0px 210px; margin: 5px; text-align: left; }
+#mainContentCenterWithLeftOnly { padding: 0px 0px 0px 210px; margin: 0px; text-align: left; }
+#mainContentRight { width: 180px; float: right; text-align: center; padding: 0px 0px 0px 0px; }
+#mainContentFooter { clear: both; }
+#footerContent { text-align: center; height: 87px; width:100%; color:#fff; background-color:#0057a8; margin:0 auto; }
+/*#bottomTop { background-image: url(Images/strip.png); height: 27px; }*/
+#crmContentLeft { float: left; width: 50%; }
+#crmContentCenter { margin: 5px; height:1600px }
+#crmContentRight { width: 49%; float: right; }
+#loginleft { width: 100px; float: left;  }
+#loginright { width: 300px; float: right; }
+#page { margin: 0 auto; width: 350px; background-color: #fff; }
+#page a { font-size: 10pt; }
+#header { background: url("Images/header_bg.png") repeat-x left top; color: #fff; height: 150px; margin: 0; overflow: hidden; text-align: right; }
+#header { background: url("Images/header_bg.png") repeat-x left top; color: #fff; height: 150px; margin: 0; overflow: hidden; text-align: right; }
+#header ul { list-style: none; }
+#header ul li { display: inline; margin: 0 2px; font-size: 8pt; }
+#header ul li a { color: #fff; text-decoration: none; font-size: 8pt; }
+#header ul li a:hover { text-decoration: underline; }
+#header ul li.username { font-weight: normal; }
+#header h1 { font-size: 24pt; margin: 0 10px; float: left; }
+#nav { background: url("Images/tabs_bg.png") repeat-x left top; height: 32px; padding: 0; overflow: hidden; border-right: solid #1F589C 1px; border-left: solid #1F589C 1px; }
+#nav ul { list-style: none; margin: 0; padding: 0; }
+#nav ul li { display: inline; margin: 0; padding: 0; height: 32px; line-height: 32px; }
+#nav ul li a { background: url("Images/tab_right.png") no-repeat top right; text-decoration: none; cursor: hand; float: left; text-decoration: none; margin: 0; padding: 0 15px 0 0; font-size: 10pt; font-weight: bold; }
+#nav ul li a span { background: url("Images/tab_left.png") no-repeat top left; color: #fff; height: 32px; text-align: center; float: left; display: block; padding: 0 0 0 15px; }
+#nav ul li a:hover { background-position: 100% -32px; }
+#nav ul li a.selected { background-position: 100% -64px; color: #183554; }
+#nav ul li a:hover span { background-position: 100% -32px; }
+#nav ul li a.selected span { background-position: 100% -64px; color: #183554; }
+#columns { background: url(Images/columns_bg.png) top left repeat-y; }
+#column1 { width: 500px; overflow: hidden; float: left; }
+#column2 { width: 250px; overflow: hidden; float: right; }
+#footer { background-color: #556677; color: #fff; border: solid #556677 1px; height: 100px; font-size: 8pt; }
+#footer p { font-size: 8pt; }
+#footer ul { list-style: none; float: right; font-size: 8pt; }
+#footer li { display: inline; margin: 0; font-size: 8pt; }
+#footer a { color: #fff; font-size: 8pt; }
+/**************************************************************************************************************
+ * Page Styles
+ **************************************************************************************************************/
+/* ~/Admin/Default.aspx */
+#admindashboard { width: 750px; margin-left: auto; margin-right: auto; }
+#admindashboard .column1 { width: 500px; }
+#admindashboard .column2 { float: right; width: 160px; }
+/* ~/Admin/Users.aspx */
+#searchterms { margin: 10px; background-color: #ccc; border: solid #333f65 1px; }
+#searchterms li, #searchterms a { font-size: 8pt; }
+#searchterms li { margin-top: 2px; margin-bottom: 2px; }
+#searchterms p { margin: 2px 4px; }
+#userlist { }
+#userlist .gv { margin: 0 10px; }
+#userlist .count { margin: 0 10px; text-align: right; font-size: 8pt; font-weight: bold; }
+#userlist .gvedrs td { width: 730px; padding: 5px; }
+/* ~/Admin/Roles.aspx */
+#roles { }
+#roles .list { margin: 0 10px; padding: 10px; border: solid #333f65 1px; background-color: #ccc; }
+#roles .list table { margin: 0; padding: 0; }
+#roles .list td { padding: 4px; }
+#roles .list label { margin-left: 5px; }
+#roles .note { margin: 0 10px; }
+/* ~/ForgotPassword.aspx */
+#passwordrecovery { margin: 50px; }
+#passwordrecovery .container { width: 300px; margin-left: auto; margin-right: auto; }
+#passwordrecovery h1 { margin: 0 0 10px 0; padding: 0; }
+#passwordrecovery p { margin: 10px 0 0 0; padding: 0; }
+#passwordrecovery label { display: block; font-weight: bold; }
+#passwordrecovery input.text { width: 295px; }
+/* ~/Member/Account.aspx */
+#accountinfo { }
+#usercustomers { width: 369px; margin: auto auto; }
+.UserCustomersTextBox { width: 121px; }
+.UserCustomersDropDown { width: 125px; }
+/* Dashboard */
+#dashLeft { padding: 5px 0px 0px 0px; float: left; width: 350px; text-align: center; }
+#dashCenter { padding: 5px 210px 0px 350px; margin: 5px; text-align: center; }
+#dashRight { padding: 5px 0px 0px 0px; width: 200px; float: right; text-align: center; }
+#dashboard { width: 980px; margin: auto auto; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; border: 0px; }
+#dashboard .head { text-align: center; }
+#dashboard .column1 { width: 175px; text-align: center; }
+#dashboard .column2 { width: 175px; text-align: center; }
+#dashboard .column3 { width: 70px; text-align: center; }
+#dashboard .column4 { width: 100px; text-align: center; vertical-align: middle; }
+#dashboard .column5 { width: 70px; text-align: center; }
+#dashboard .column6 { width: 175px; text-align: center; }
+#dashboard .column7 { width: 175px; text-align: center; }
+.dashtitle { color: #006600; font-weight: bold; font-size: small; }
+/*Shopping Cart*/
+
+/**************************************************************************************************************
+ * ASP.NET Controls
+ **************************************************************************************************************/
+/* <asp:GridView /> */
+.gv { background-color: #ccc; border: solid #5690ad 1px; border-collapse: collapse; margin-left: auto; margin-right: auto; }
+.gv th, .gv td { text-align: left; padding: 2px; font-size: 10pt; border-right: solid #5690ad 1px; }
+.gv th { color: #fff; background-color: #5690ad; }
+.gv th a { color: #fff; text-decoration: none; }
+.gvr { background-color: #fff; }
+.gvar { background-color: #eee; }
+.gvpr td { color: #fff; font-weight: bold; background-color: #5690ad; font-size: 10pt; }
+.gvpr a { color: #fff; font-weight: bold; }
+.gvpr td table { margin: 0; }
+/* <asp:DetailsView /> */
+.dv { background-color: #ccc; border: solid #5690ad 1px; border-collapse: collapse; margin: auto auto; }
+.dv td { padding: 4px; }
+.dvr { }
+.dvh { text-align: right; white-space: nowrap; color: #fff; background-color: #5690ad; font-weight: bold; }
+/* <asp:DetailsViewProduct /> */
+.dvProduct { margin: auto auto; }
+.dvProduct td { padding: 0 8px 0 8px;  }
+.dvProductr { }
+.dvProducth { font-weight: bold; }
+/* Order Status Header Table */
+.os { border: solid #5081c0 1px; border-collapse: collapse; width: 400px; white-space:nowrap; }
+.os td { padding: 4px; }
+.osr { }
+.osh { text-align: right; white-space: nowrap; color: #000; background-color: #eee; font-weight: bold; width: 150px; }
+.osd { background-color: #fff; border-left-style:solid; border-left-color:#5081c0; border-left-width:1px; }
+.oshs { background-color: #eee; width: 150px; }
+.osds { background-color: #fff; border-bottom-style:solid; border-bottom-color:#5081c0; border-bottom-width:1px;}
+.oshr { color:#5081c0; background-color:#5081c0; height:1px; border:0px; }
+/* Checkout Header Table */
+.co { border: solid #0057a8 1px; border-collapse: collapse; width: 900px; }
+.co td { padding: 4px; }
+.cor { }
+.coh { text-align: right; white-space: nowrap; color: #fff; background-color: #0057a8; font-weight: bold; width: 150px; }
+.cod { background-color: #eeeeee; }
+/* Search Header Table */
+#search { margin-left: 20px; }
+#search td { vertical-align: middle; }
+.sr { width: 700px; }
+.srl { color: green; }
+.srd:link { color: Blue; font-size: larger; text-decoration: underline; }
+.srb { height: 15px; }
+.srh { }
+.sr td { }
+.srs { }
+.srr { }
+.srd { }
+/* <asp:FormView /> */
+.fv { margin-left: auto; margin-right: auto; }
+/* <asp:ValidationSummary /> */
+.vs { color: #fff; background-color: #c00; margin: 0; padding: 4px; }
+.vs ul { margin: 0; padding: 0; list-style: none; }
+.vs li { margin: 0; padding: 0; font-size: 8pt; font-weight: normal; }
+/* <nds:Dialog /> */
+.dialog { color: #000; background-color: #fff; border: solid #333f65 2px; }
+.dialog_title { color: #fff; background-color: #333f65; font-size: 10pt; font-weight: bold; padding: 4px; text-align: left; }
+.dialog_content { text-align: left; }
+.dialog_content .gv, .dialog_content .dv, .dialog_content table, .dialog_content p { margin: 10px 10px 0 10px; }
+.dialog_buttons { padding: 10px; text-align: right; }
+.dialog_background { background-color: Gray; filter: alpha(opacity=70); opacity: 0.7; }
+#map { width: 550px; height: 400px; margin: auto auto; display: none; }
+.instructions { font-size: 16px; text-align: center; }
+/* Protoload */
+.waiting { background-image: url('Images/waiting.gif'); background-repeat: no-repeat; background-position: center center; background-color: white; }
+.bigWaiting { background-image: url('Images/bigWaiting.gif'); background-repeat: no-repeat; background-position: center 20%; background-color: white; }
+.blackWaiting { background-image: url('Images/blackWaiting.gif'); background-repeat: no-repeat; background-position: center center; background-color: black; }
+.bigBlackWaiting { background-image: url('Images/bigBlackWaiting.gif'); background-repeat: no-repeat; background-position: center center; background-color: black; }
+
+.contactsTable {
+    border-collapse: collapse;
+    background-color: #f6f6f6;
+    width:967px;
+}
+.contactsTable td {
+    border: Solid 1px #d9d9d9;
+}
+.contactsCaptionLeft {
+    background-color: #f2f2f2;
+    width: 90px;
+
+}
+.contactsCaptionCenter {
+    background-color: #f2f2f2;
+    width: 80px;
+}
+.contactsCaptionRight {
+    background-color: #f2f2f2;
+    width: 90px;
+}
+.contactsCommands td {
+    background-color: inherit;
+    border: none ;
+    margin:10px;
+}
+.contactsData {
+    font-weight:bold;
+    white-space:nowrap;
+    }
+.edTitle {text-align:right; vertical-align:middle; white-space:nowrap; width:110px;}
+.edTitleNoWidth {vertical-align:middle; white-space:nowrap;}
+
+
+
+.loginstatus
+{
+    margin-right:10px;
+}
+
+.dxmSubMenu
+{
+    text-align:left;
+}

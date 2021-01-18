@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <title>NDS Partner Web Portal</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+    <!--<link rel="stylesheet" href="NDSBlue.css">-->
     <link rel="stylesheet" href="site.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://connect.ndspro.com/l/514831/2018-05-07/2rmdfr/514831/55580/favicon.ico">
     <link rel="icon" type="image/x-icon" href="https://connect.ndspro.com/l/514831/2018-05-07/2rmdfr/514831/55580/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,500,700">
 </head>
 <body>
     <div class="header">
@@ -14,13 +17,13 @@
             <div class="container">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 nopad logo">
                     <a href="http://www.ndspro.net/" target="_top">
-                        <div class="mktoImg" style="min-width: 100px; max-width: 300px; min-height: 50px; height: 100px;">
+                        <div class="mktoImg" style="height: 100px; max-width: 300px; min-height: 50px; min-width: 100px;">
                             <img class="lpimg expandToFit" src="Logo_NDS_transparentbg_whitefont.png" style="max-height: 100px;">
                         </div>
                     </a>
                 </div>
-                <div class="logout col-lg-4 col-md-4 col-sm-4 col-xs-4 align-items-end" style="float: right; height: 100px; vertical-align: bottom; display: none">
-                    <a class="logout" href="#" style="text-decoration: none !important; color: white; font-weight: 700; text-align: right; display: table-cell; vertical-align: bottom">Log Out</a>
+                <div class="logout col-lg-4 col-md-4 col-sm-4 col-xs-4 align-items-end" style="display: none; float: right; height: 100px; vertical-align: bottom;">
+                    <a class="logout" href="#" style="color: white; display: table-cell; font-weight: 700; text-align: right; text-decoration: none !important; vertical-align: bottom">Log Out</a>
                 </div>
             </div>
         </div>
@@ -83,20 +86,22 @@
         <div class="d-flex justify-content-center">
             <form>
                 <div class="flex-column">
-                    <div class="flex-row">
+                    <div>
                         <div class="p-2">
                             <label>
                                 LOGIN OR
-                                <a href="#">SIGN UP</a>
+                                <a href="register.html">SIGN UP</a>
                             </label>
                         </div>
                     </div>
-                    <div class="d-flex flex-row">
+                    <div class="d-flex flex-row" style="flex-wrap: wrap">
                         <div class="p-2">
-                            <input type="text" class="form-control-lg" id="userName" placeholder="User Name">
+                            <label>User Name</label>
+                            <input type="text" class="form-control-lg" id="userName" placeholder="">
                         </div>
                         <div class="p-2">
-                            <input type="password" class="form-control-lg" id="password1" placeholder="Password">
+                            <label style="min-width: 80.91px; text-align: right">Password</label>
+                            <input type="password" class="form-control-lg" id="password1" placeholder="">
                         </div>
                         <div class="p-2">
                             <button type="submit" class="btn-lg btn-primary login">Log In</button>
@@ -104,7 +109,7 @@
                     </div>
                     <div class="d-flex flex-row justify-content-end">
                         <div class="p-2 ">
-                            <input type="checkbox" class="form-check-input" id="rememberMe" checked="checked">
+                            <input type="checkbox" id="rememberMe" checked="checked">
                             <label class="form-check-label" for="rememberMe">Remember me</label>
                         </div>
                     </div>
@@ -115,57 +120,29 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                <p class="lead">Thank you for choosing NDS and for your interest in our products. </p>
-                <p>If you are not a distribution partner of NDS, please note that registering here will not enable you to purchase NDS product. Instead, please see the sidebar for our Where to Buy tools and Contact Us form.</p>
-                <p>
-                    Ndspro.net makes doing business with NDS even easier! With your ndspro.net access, you have a variety of new resources at your finger tips! With just a couple of keystrokes, you can
-                </p>
+                <p>Thank you for choosing NDS and for your interest in our products!</p>
+                <p>This tool is available to all of our NDS Distribution partners.</p>
+                <p><a href="https://www.ndspro.net">Ndspro.net</a> makes doing business with NDS even easier!</p>
+                <p>If you are not a distribution customer of NDS, registering here will not enable you to purchase NDS products. Please see the sidebar for our <a href="https://www.ndspro.com/where-to-buy">Where to Buy</a> tools or <a href="https://connect.ndspro.com/contactus">Contact Us</a> content using this form.</p>
+                <p>With your ndspro.net access, you have a variety of tools and resources at your fingertips!</p>
                 <ul style="margin-bottom: 0">
-                    <li>
-                        Check inventory
-                    </li>
-                    <li>
-                        Check pricing
-                    </li>
-                    <li>
-                        Order product
-                    </li>
-                    <li>
-                        Receive instant order acknowledgements
-                    </li>
-                    <li>
-                        Review the status of your orders
-                    </li>
-                    <li>
-                        Add special notes and shipping instructions
-                    </li>
-                    <li>
-                        Utilize our drop ship options
-                    </li>
-                    <li>
-                        Obtain tracking information
-                    </li>
-                    <li>
-                        Take advantage of no broken box fees
-                    </li>
-                    <li>
-                        Print invoices
-                    </li>
-                    <li>
-                        View your discount schedule
-                    </li>
-                    <li>
-                        Order samples and catalogs
-                    </li>
+                    <li>Order products</li>
+                    <li>Receive instant order acknowledgments after order has been placed</li>
+                    <li>Review the status of all your orders</li>
+                    <li>Add any special notes or shipping instructions</li>
+                    <li>Check inventory in our warehouses before ordering</li>
+                    <li>Check pricing for all our parts</li>
+                    <li>Obtain tracking information after products have been shipped</li>
+                    <li>Print invoices</li>
+                    <li>View your discount schedule</li>
+                    <li>Utilize our drop ship options</li>
+                    <li>Take advantage of no broken box fees</li>
+                    <li>Order samples and catalogs</li>
                 </ul>
-                <br />
-                <p>
-                    As always, our customer service team is ready to help in any way that we can! If you need any assistance with navigating our website, please contact us at
-                    <a href="mailto:customerservice@ndspro.com">customerservice@ndspro.com</a>. We’re happy to show you around our website and share these helpful resources with you!
-                </p>
-                <p>
-                    Thank you again for making NDS your source for all your Water Management needs!
-                </p>
+
+                <p>Our customer service team is ready to help in any way that you need! We’re happy to show you around our website and share these helpful resources with you!</p>
+                <p>If you require any assistance, please contact us at <a href="mailto:customerservice@ndspro.com">customerservice@ndspro.com</a>.</p>
+                <p>Thank you again for making NDS your preferred choice for all your Water Management needs!</p>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="row">
@@ -175,75 +152,165 @@
                     <label>Learn Where to Buy</label>
                     <ul style="margin-bottom: 0">
                         <li>
-                            <a href="http://www.ndspro.com/where-to-buy-pro">Contractors</a>
+                            <a href="https://www.ndspro.com/where-to-buy-pro">Contractors</a>
                         </li>
                         <li>
-                            <a href="http://www.ndspro.com/where-to-buy">Homeowners</a>
+                            <a href="https://www.ndspro.com/where-to-buy">Homeowners</a>
                         </li>
                     </ul>
-                    <label>For all other inquiries, please use our <a href="http://www.ndspro.com/contact-us">contact us form</a>.</label>
+                    <label>For all other inquiries, please use our <a href="https://www.ndspro.com/contact-us">contact us form</a>.</label>
                 </div>
             </div>
         </div>
     </div>
-    <div class="home__section">
-        <div class="home__section--6grid">
-            <div class="home__section--heading">
-                <h2>Innovative Product Solutions</h2>
-                <p class="sub-title">Our extensive experience and commitment to quality results in products that offer maximum performance combined with smart features that make them easier to handle, install and maintain.</p>
-            </div>
-            <div class="row blue-bg" style="overflow:hidden;">
-                <div class="col-md-12 padding-zero">
-                    <div class="col-lg-5 col-md-12 col-sm-12 hidden-xs padding-zero" style="float:right">
-                        <div class="downspout-banner">
-                            <img src="grouped.png" style="float:left; width:100%;" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/media/wysiwyg/grouped.png'">
-                        </div>
+    <main class="page-main">
+        <div class="home__section">
+            <div class="home__section--6grid">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="home__section--heading">
+                        <h2>Innovative Product Solutions</h2>
+                        <p class="sub-title">Our extensive experience and commitment to quality results in products that offer maximum performance combined with smart features that make them easier to handle, install and maintain.</p>
                     </div>
-                    <div class="col-lg-4 col-md-7 col-sm-8 padding-zero" style="float:right">
-                        <div class="banner-text">
-                            <h2 class="banner-text-title">Upgrade Your Downspout  Drainage!</h2>
-                            <p class="banner-text-desc">The <b>New</b> Downspout  Defender ™ outperforms all other solutions.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 padding-zero" style="float:right">
-                        <div class="banner-anchor-wrapper">
-                            <a class="banner-learnmore" href="https://www.ndspro.com/downspout-defender.html" id="global-downspout-drainage-callout" target="_top">Learn more</a>
+                    <div class="row blue-bg" style="overflow:hidden;">
+                        <div class="col-md-12 padding-zero">
+                            <div class="col-lg-5 col-md-12 col-sm-12 hidden-xs padding-zero">
+                                <div class="downspout-banner">
+                                    <img src="https://marvel-b1-cdn.bc0a.com/f00000000141557/www.ndspro.com/media/wysiwyg/grouped.png" style="float:left; width:100%;" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/media/wysiwyg/grouped.png'">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-7 col-sm-8 padding-zero">
+                                <div class="banner-text">
+                                    <h2 class="banner-text-title">Upgrade Your Downspout  Drainage!</h2>
+                                    <p class="banner-text-desc">The <b>New</b> Downspout  Defender ™ outperforms all other solutions.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 padding-zero">
+                                <div class="banner-anchor-wrapper">
+                                    <a class="banner-learnmore" href="https://www.ndspro.com/downspout-defender.html" id="global-downspout-drainage-callout" target="_top">Learn more</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <style>
+                    /*downspout callout banner */
+                    .padding-zero {
+                        padding: 0;
+                    }
 
-            <div class="home__section--content">
-                <ul>
-                    <li>
-                        <figure>
-                            <img src="6grid-1.jpg" alt="Drainage" be_marvel="1" onerror="this.onerror = null;this.src = '6grid-1.jpg'">
-                            <figcaption>
-                                <a class="action primary" href="https://www.ndspro.com/products/drainage.html" id="hp-innovative-products-drainage" target="_top">
-                                    <span>Drainage</span>
-                                </a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="6grid-2.jpg" alt="Irrigation" be_marvel="1" onerror="this.onerror = null;this.src = '6grid-2.jpg'">
-                            <figcaption>
-                                <a class="action primary" href="https://www.ndspro.com/products/irrigation.html" id="hp-innovative-products-irrigation" target="_top">
-                                    <span>Irrigation</span>
-                                </a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li><figure><img src="6grid-3.jpg" alt="Pavers" be_marvel="1" onerror="this.onerror=null;this.src='6grid-3.jpg'"><figcaption><a class="action primary" href="/products/permeable-pavers.html" id="hp-innovative-products-pavers" target="_top"><span>Pavers</span></a></figcaption></figure></li>
-                    <li><figure><img src="6grid-4.jpg" alt="Root Barriers" be_marvel="1" onerror="this.onerror=null;this.src='6grid-4.jpg'"><figcaption><a class="action primary" href="/products/root-barriers.html" id="hp-innovative-products-root-barriers" target="_top"><span>Root Barriers</span></a></figcaption></figure></li>
-                    <li><figure><img src="6grid-5.jpg" alt="Valve &amp; Meter Boxes" be_marvel="1" onerror="this.onerror=null;this.src='6grid-5.jpg'"><figcaption><a class="action primary" href="/products/valve-and-meter-boxes.html" id="hp-innovative-products-valve-meter-boxes" target="_top"><span>Valve &amp; Meter Boxes</span></a></figcaption></figure></li>
-                    <li><figure><img src="6grid-6.jpg" alt="Flow Management" be_marvel="1" onerror="this.onerror=null;this.src='6grid-6.jpg'"><figcaption><a class="action primary" href="/products/flow-management.html" id="hp-innovative-products-flow-management" target="_top"><span>Flow Management</span></a></figcaption></figure></li>
-                </ul>
+                    .banner-anchor-wrapper .banner-learnmore {
+                        color: white;
+                        font-family: Ubuntu;
+                        font-size: 17px;
+                        border: 2px solid white;
+                        border-radius: 100px;
+                        padding: 12px 40px;
+                    }
+
+                    .blue-bg {
+                        background: #00529c;
+                    }
+
+                    h2.banner-text-title {
+                        font-family: 'Ubuntu';
+                        color: white;
+                        font-weight: bold;
+                        font-size: 26px;
+                        text-align: left;
+                        padding: 10px 0;
+                        margin: 0;
+                    }
+
+                    .banner-text-desc {
+                        text-align: left;
+                        color: white;
+                        font-family: 'Ubuntu';
+                        font-size: 17px;
+                    }
+
+                    .banner-text {
+                        margin-left: 5px;
+                    }
+
+                    .banner-anchor-wrapper {
+                        padding: 20px 0;
+                        text-align: left;
+                        margin-left: 10px;
+                    }
+
+                    @media(max-width:1300px) {
+                        .banner-text {
+                            margin-left: 25px;
+                        }
+
+                        .banner-anchor-wrapper {
+                            margin-left: 15px;
+                        }
+                    }
+
+                    @media(min-width:768px) {
+                        .banner-anchor-wrapper {
+                            padding-top: 90px;
+                        }
+
+                        .banner-text {
+                            padding-top: 50px;
+                        }
+                    }
+
+                    @media (max-width:1024px) {
+                        .banner-text {
+                            padding-top: 11px;
+                        }
+
+                        .banner-anchor-wrapper {
+                            padding: 40px 0;
+                        }
+                    }
+
+                    @media(max-width:750px) {
+                        .banner-anchor-wrapper {
+                            padding-top: 20px;
+                            padding-bottom: 35px;
+                        }
+                    }
+
+                    /* downspout callout banner css ends*/
+                </style>
+                <div class="home__section--content">
+                    <ul>
+                        <li><figure><img src="https://marvel-b1-cdn.bc0a.com/f00000000141557/www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-1.jpg" alt="Drainage" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-1.jpg'"><figcaption><a class="action primary" href="https://www.ndspro.com/products/drainage.html" id="hp-innovative-products-drainage" target="_top"><span>Drainage</span></a></figcaption></figure></li>
+                        <li><figure><img src="https://marvel-b1-cdn.bc0a.com/f00000000141557/www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-2.jpg" alt="Irrigation" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-2.jpg'"><figcaption><a class="action primary" href="https://www.ndspro.com/products/irrigation.html" id="hp-innovative-products-irrigation" target="_top"><span>Irrigation</span></a></figcaption></figure></li>
+                        <li><figure><img src="https://marvel-b1-cdn.bc0a.com/f00000000141557/www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-3.jpg" alt="Pavers" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-3.jpg'"><figcaption><a class="action primary" href="https://www.ndspro.com/products/permeable-pavers.html" id="hp-innovative-products-pavers" target="_top"><span>Pavers</span></a></figcaption></figure></li>
+                        <li><figure><img src="https://marvel-b1-cdn.bc0a.com/f00000000141557/www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-4.jpg" alt="Root Barriers" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-4.jpg'"><figcaption><a class="action primary" href="https://www.ndspro.com/products/root-barriers.html" id="hp-innovative-products-root-barriers" target="_top"><span>Root Barriers</span></a></figcaption></figure></li>
+                        <li><figure><img src="https://marvel-b1-cdn.bc0a.com/f00000000141557/www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-5.jpg" alt="Valve &amp; Meter Boxes" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-5.jpg'"><figcaption><a class="action primary" href="https://www.ndspro.com/products/valve-and-meter-boxes.html" id="hp-innovative-products-valve-meter-boxes" target="_top"><span>Valve &amp; Meter Boxes</span></a></figcaption></figure></li>
+                        <li><figure><img src="https://marvel-b1-cdn.bc0a.com/f00000000141557/www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-6.jpg" alt="Flow Management" be_marvel="1" onerror="this.onerror=null;this.src='https://www.ndspro.com/static/frontend/Nds/default/en_US/Magento_Theme/images/homepage/6grid-6.jpg'"><figcaption><a class="action primary" href="https://www.ndspro.com/products/flow-management.html" id="hp-innovative-products-flow-management" target="_top"><span>Flow Management</span></a></figcaption></figure></li>
+                    </ul>
+                </div>
             </div>
         </div>
+    </main>
+    <div id="f" class="footer">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-md-5">
+                    <p style="color:#FFFFFF; font-size:13px;">
+                        Copyright ©
+                        <script language="javascript" type="text/javascript">
+                            var today = new Date()
+                            var year = today.getFullYear()
+                            document.write(year)
+                        </script> NDS Inc. All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-2">  <p style="color: #ffffff; font-size:13px;"><a href="https://www.ndspro.net/" target="_blank" id="" style="color: #ffffff;">ndspro.net</a></p></div>
+            </div>
+        </div>
+        <!--/container -->
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
     <script src="site.js"></script>

@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>NDS Partner Web Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+    <!--<link rel="stylesheet" href="NDSBlue.css">-->
+    <link rel="stylesheet" href="site.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://connect.ndspro.com/l/514831/2018-05-07/2rmdfr/514831/55580/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://connect.ndspro.com/l/514831/2018-05-07/2rmdfr/514831/55580/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,500,700">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-image: url(background_nds_darkwater2.png)">
+            <div class="container">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-7 nopad logo">
+                    <a href="http://www.ndspro.net/" target="_top">
+                        <div class="mktoImg" style="height: 100px; max-width: 300px; min-height: 50px; min-width: 100px;">
+                            <img class="lpimg expandToFit" src="Logo_NDS_transparentbg_whitefont.png" style="max-height: 100px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="logout col-lg-4 col-md-4 col-sm-4 col-xs-4 align-items-end" style="display: none; float: right; height: 100px; vertical-align: bottom;">
+                    <a class="logout" href="#" style="color: white; display: table-cell; font-weight: 700; text-align: right; text-decoration: none !important; vertical-align: bottom">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark menu" style="display: none">
+        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Distributor Lookup</a>
+                        <a class="dropdown-item" href="#">Discount Schedules</a>
+                        <a class="dropdown-item" href="#">Tubing Sheet</a>
+                        <a class="dropdown-item" href="#">Pricing Query</a>
+                        <a class="dropdown-item" href="#">Order Status</a>
+                        <a class="dropdown-item" href="#">Document Print</a>
+                        <a class="dropdown-item" href="#">Image Library</a>
+                        <a class="dropdown-item" href="#">Marketing Support Portal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Employees
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Dashboard</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Your Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Update Profile</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Administration
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Admin Dashboard</a>
+                        <a class="dropdown-item" href="#">Users</a>
+                        <a class="dropdown-item" href="#">Roles</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="margin: auto auto; width: 990px; background-color: #fff;">
+        <div id="ctl00_up">
+            <h1 class="center">Register</h1>
+            <br>
+            <p class="center">
+                <b>
+                    This website is provided for NDS Distributors and Sales Representatives.<br>
+                    <br>
+                    For literature or samples, please call customer service at 800-726-1994.
+                    <br>
+                    For the contractor drainage program, please visit <a href="http://ndscontractor.com">ndscontractor.com</a><br>
+                </b>
+            </p>
+            <br>
+            <table class="centertable" cellspacing="0" cellpadding="0" border="0" id="ctl00_mc_cuw1" style="border-collapse:collapse;">
+                <tbody>
+                    <tr style="height:100%;">
+                        <td>
+                            <table cellspacing="0" cellpadding="0" border="0" style="height:100%;width:100%;border-collapse:collapse;">
+                                <tbody>
+                                    <tr>
+                                        <td style="height:100%;width:100%;">
+                                            <table border="0" style="font-size: 100%;">
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_FirstName" id="ctl00_mc_cuw1_CreateUserStepContainer_FirstNameLabel">First Name:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$FirstName" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_FirstName" class="text">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_FirstNameRequired" title="First Name is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_LastName" id="ctl00_mc_cuw1_CreateUserStepContainer_LastNameLabel">Last Name:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$LastName" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_LastName" class="text">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_LastNameRequired" title="Last Name is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Company" id="ctl00_mc_cuw1_CreateUserStepContainer_CompanyLabel">Company:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Company" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_Company" class="text">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_CompanyRequired" title="Company is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_AccountInfo" id="ctl00_mc_cuw1_CreateUserStepContainer_AccountLabel">Account/Rep Number(s):</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$AccountInfo" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_AccountInfo" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright"></td>
+                                                        <td class="tdleft">
+                                                            The above info will help us to identify you and expedite your approval
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Telephone" id="ctl00_mc_cuw1_CreateUserStepContainer_TelephoneLabel">Telephone:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Telephone" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_Telephone" class="text">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_TelephoneValidator" title="Primary Telephone is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Extension" id="ctl00_mc_cuw1_CreateUserStepContainer_ExtensionLabel">Extension (Optional):</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Extension" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_Extension" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Fax" id="ctl00_mc_cuw1_CreateUserStepContainer_FaxLabel">Fax (Optional):</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Fax" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_Fax" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Street1" id="ctl00_mc_cuw1_CreateUserStepContainer_Street1Label">Address Line 1:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Street1" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_Street1" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Street2" id="ctl00_mc_cuw1_CreateUserStepContainer_Street2Label">Address Line 2 (Optional):</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Street2" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_Street2" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_City" id="ctl00_mc_cuw1_CreateUserStepContainer_CityLabel">City:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$City" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_City" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_StateOrProvince" id="ctl00_mc_cuw1_CreateUserStepContainer_StateOrProvinceLabel">State:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$StateOrProvince" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_StateOrProvince" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_PostalCode" id="ctl00_mc_cuw1_CreateUserStepContainer_PostalCodeLabel">Zip Code:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$PostalCode" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_PostalCode" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_CountryOrRegion" id="ctl00_mc_cuw1_CreateUserStepContainer_CountryOrRegionLabel">Country (Optional):</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$CountryOrRegion" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_CountryOrRegion" class="text">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                        <td>
+                                                            &nbsp;
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_UserName" id="ctl00_mc_cuw1_CreateUserStepContainer_UserNameLabel">User Name:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$UserName" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_UserName" class="text">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_UserNameRequired" title="User Name is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Password" id="ctl00_mc_cuw1_CreateUserStepContainer_PasswordLabel">Password:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Password" type="password" id="ctl00_mc_cuw1_CreateUserStepContainer_Password" class="text">
+
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_PasswordRequired" title="Password is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_ConfirmPassword" id="ctl00_mc_cuw1_CreateUserStepContainer_ConfirmPasswordLabel">Confirm Password:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$ConfirmPassword" type="password" id="ctl00_mc_cuw1_CreateUserStepContainer_ConfirmPassword" class="text">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_ConfirmPasswordRequired" title="Confirm Password is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdright">
+                                                            <label for="ctl00_mc_cuw1_CreateUserStepContainer_Email" id="ctl00_mc_cuw1_CreateUserStepContainer_EmailLabel">E-mail:</label>
+                                                        </td>
+                                                        <td class="tdleft">
+                                                            <input name="ctl00$mc$cuw1$CreateUserStepContainer$Email" type="text" id="ctl00_mc_cuw1_CreateUserStepContainer_Email" class="text">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_EmailRequired" title="E-mail is required." style="color:Red;visibility:hidden;">*</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="2">
+                                                            <span id="ctl00_mc_cuw1_CreateUserStepContainer_PasswordCompare" style="color:Red;display:none;">The Password and Confirmation Password must match.</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="2" style="color: Red;"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <table cellspacing="5" cellpadding="5" border="0" style="height:100%;width:100%;">
+                                <tbody>
+                                    <tr align="right">
+                                        <td align="right"><input type="submit" name="ctl00$mc$cuw1$__CustomNav0$StepNextButtonButton" value="Register" id="ctl00_mc_cuw1___CustomNav0_StepNextButtonButton"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin: 0 auto; width: 400px;">
+                <table id="ctl00_mc_Captcha_LP" class="dxcaLoadingPanel" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+                    <tbody>
+                        <tr>
+                            <td class="dx"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="http://www.ndspro.net/DXR.axd?r=1_58-fAKkl" alt="" align="middle"></td>
+                        </tr>
+                    </tbody>
+                </table><div class="dxcaControl" id="ctl00_mc_Captcha" style="width:400px;">
+                    <table cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="ctl00_mc_Captcha_IMGD" class="dxca-imageDiv" style="background-color:#EEEEEE;border-color:#A8A8A8;border-width:2px;border-style:solid;width:200px;line-height:0px;font-size:0px;">
+                                        <img id="ctl00_mc_Captcha_IMG" src="captcha.png" alt="Captcha image" style="height:80px;width:200px;">
+                                    </div>
+                                </td>
+                                <td class="dxcaTextBoxCellNoIndent" style="padding-left:16px;padding-right:0px;padding-top:0px;padding-bottom:0px;">
+                                    <label class="dxcaTextBoxLabel" for="ctl00_mc_Captcha_TB_I">Type the code shown:</label><table id="ctl00_mc_Captcha_TB_ET" class="dxeValidDynEditorTable dxeRoot_MetropolisBlue" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td id="ctl00_mc_Captcha_TB_CC">
+                                                    <table class="dxeTextBoxSys dxeTextBox_MetropolisBlue dxeTextBoxDefaultWidthSys" cellspacing="0" cellpadding="0" id="ctl00_mc_Captcha_TB" border="0" style="width:200px;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="dxic" style="width:100%;"><input class="dxeEditArea_MetropolisBlue dxeEditAreaSys" id="ctl00_mc_Captcha_TB_I" name="ctl00$mc$Captcha$TB" onfocus="ASPx.EGotFocus('ctl00_mc_Captcha_TB')" onblur="ASPx.ELostFocus('ctl00_mc_Captcha_TB')" onchange="ASPx.EValueChanged('ctl00_mc_Captcha_TB')" type="text" autocomplete="off"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="ctl00_mc_Captcha_TB_EC" class="dxeErrorCell_MetropolisBlue dxeErrorFrame_MetropolisBlue dxeErrorFrameSys dxeErrorCellSys dxeNoBorderTop" style="display:none;white-space:nowrap;">The submitted code is incorrect</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <script id="dxss_45526183" type="text/javascript" data-executed="true">
+<!--
+                                        ASPx.createControl(ASPxClientTextBox, 'ctl00_mc_Captcha_TB', '', { 'uniqueID': 'ctl00$mc$Captcha$TB', 'validationGroup': 'CreateUserWizard1', 'customValidationEnabled': true, 'isValid': true, 'errorText': 'The submitted code is incorrect', 'validateOnLeave': false, 'isErrorFrameRequired': true, 'display': 'Dynamic', 'errorDisplayMode': 't', 'controlCellStyles': { 'cssClass': 'dxeErrorFrame_MetropolisBlue dxeErrorFrameSys dxeNoBorderBottom dxeControlsCell_MetropolisBlue', 'style': '' }, 'errorCellPosition': 'Bottom', 'autoCompleteAttribute': { 'name': 'autocomplete', 'value': 'off' }, 'isCaptchaTextBox': true }, null, null, { 'decorationStyles': [{ 'key': 'I', 'className': 'dxeInvalid_MetropolisBlue', 'cssText': '' }, { 'key': 'F', 'className': 'dxeFocused_MetropolisBlue', 'cssText': '' }] });
+
+                                        //-->
+                                    </script>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="dxcaRefreshButtonCell" style="padding-top:3px;padding-bottom:4px;"><a class="dxcaRefreshButton" id="ctl00_mc_Captcha_RB" href="javascript:;"><img id="ctl00_mc_Captcha_RIMG" class="dx-vam dxEditors_caRefresh" src="http://www.ndspro.net/DXR.axd?r=1_58-fAKkl" alt="Show another code" style="margin-right:4px;"><span id="ctl00_mc_Captcha_RTS" class="dxcaRefreshButtonText" style="vertical-align:middle;">Show another code</span></a></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <script id="dxss_779822296" type="text/javascript" data-executed="true">
+<!--
+                    ASPx.AddHoverItems('ctl00_mc_Captcha', [[['dxcaRefreshButtonHover'], [''], ['RB']]]);
+                    ASPx.createControl(ASPxClientCaptcha, 'ctl00_mc_Captcha', '', { 'callBack': function (arg) { WebForm_DoCallback('ctl00$mc$Captcha', arg, ASPx.Callback, 'ctl00_mc_Captcha', ASPx.CallbackError, true); }, 'uniqueID': 'ctl00$mc$Captcha' });
+
+                    //-->
+                </script>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="f" class="footer">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-md-5">
+                    <p style="color:#FFFFFF; font-size:13px;">
+                        Copyright ©
+                        <script language="javascript" type="text/javascript">
+                            var today = new Date()
+                            var year = today.getFullYear()
+                            document.write(year)
+                        </script> NDS Inc. All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-2">  <p style="color: #ffffff; font-size:13px;"><a href="https://www.ndspro.net/" target="_blank" id="" style="color: #ffffff;">ndspro.net</a></p></div>
+            </div>
+        </div>
+        <!--/container -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="site.js"></script>
+</body>
+</html>
