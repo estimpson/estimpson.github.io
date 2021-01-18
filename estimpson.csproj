@@ -1,0 +1,822 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2DAA291-3E1D-4BB4-92AD-B0A742182D9F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>estimpson</RootNamespace>
+    <AssemblyName>estimpson</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44356</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="edxW3CxHtml5x\1.3\Index.html" />
+    <Content Include="edxW3CxHtml5x\3\index.html" />
+    <Content Include="edxW3CxHtml5x\3\site.css" />
+    <Content Include="examples\basic-modules\index.html" />
+    <Content Include="examples\basic-modules\main.js" />
+    <Content Include="examples\basic-modules\modules\canvas.js" />
+    <Content Include="examples\basic-modules\modules\square.js" />
+    <Content Include="examples\dynamic-module-imports\index.html" />
+    <Content Include="examples\dynamic-module-imports\main.js" />
+    <Content Include="examples\dynamic-module-imports\modules\canvas.js" />
+    <Content Include="examples\dynamic-module-imports\modules\circle.js" />
+    <Content Include="examples\dynamic-module-imports\modules\square.js" />
+    <Content Include="examples\dynamic-module-imports\modules\triangle.js" />
+    <Content Include="examples\module-aggregation\index.html" />
+    <Content Include="examples\module-aggregation\main.js" />
+    <Content Include="examples\module-aggregation\modules\canvas.js" />
+    <Content Include="examples\module-aggregation\modules\shapes\circle.js" />
+    <Content Include="examples\module-aggregation\modules\shapes.js" />
+    <Content Include="examples\module-aggregation\modules\shapes\square.js" />
+    <Content Include="examples\module-aggregation\modules\shapes\triangle.js" />
+    <Content Include="examples\classes\index.html" />
+    <Content Include="examples\classes\main.js" />
+    <Content Include="examples\classes\modules\canvas.js" />
+    <Content Include="examples\classes\modules\circle.js" />
+    <Content Include="examples\classes\modules\square.js" />
+    <Content Include="examples\classes\modules\triangle.js" />
+    <Content Include="examples\module-objects\index.html" />
+    <Content Include="examples\module-objects\main.js" />
+    <Content Include="examples\module-objects\modules\canvas.js" />
+    <Content Include="examples\module-objects\modules\circle.js" />
+    <Content Include="examples\module-objects\modules\square.js" />
+    <Content Include="examples\module-objects\modules\triangle.js" />
+    <Content Include="examples\renaming\index.html" />
+    <Content Include="examples\renaming\main.js" />
+    <Content Include="examples\renaming\modules\canvas.js" />
+    <Content Include="examples\renaming\modules\circle.js" />
+    <Content Include="examples\renaming\modules\square.js" />
+    <Content Include="examples\renaming\modules\triangle.js" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="ndspro.net\layout-demo\6grid-1.jpg" />
+    <Content Include="ndspro.net\layout-demo\6grid-2.jpg" />
+    <Content Include="ndspro.net\layout-demo\6grid-3.jpg" />
+    <Content Include="ndspro.net\layout-demo\6grid-4.jpg" />
+    <Content Include="ndspro.net\layout-demo\6grid-5.jpg" />
+    <Content Include="ndspro.net\layout-demo\6grid-6.jpg" />
+    <Content Include="ndspro.net\layout-demo\background_nds_darkwater2.png" />
+    <Content Include="ndspro.net\layout-demo\captcha.png" />
+    <Content Include="ndspro.net\layout-demo\Clearance.png" />
+    <Content Include="ndspro.net\layout-demo\ClearanceText.png" />
+    <Content Include="ndspro.net\layout-demo\favicon.png" />
+    <Content Include="ndspro.net\layout-demo\grouped.png" />
+    <Content Include="ndspro.net\layout-demo\index.html" />
+    <Content Include="ndspro.net\layout-demo\Logo_NDS_transparentbg_whitefont.png" />
+    <Content Include="ndspro.net\layout-demo\NDSBlue.css" />
+    <Content Include="ndspro.net\layout-demo\register.html" />
+    <Content Include="ndspro.net\layout-demo\site.css" />
+    <Content Include="ndspro.net\layout-demo\site.js" />
+    <Content Include="ndspro.net\layout-demo\test.css" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Baraff_Figure26.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_Equiv_U_R_Vectors.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\image1.tiff" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\image2.tiff" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\image3.tiff" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\image4.tiff" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\image5.tiff" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\image6.tiff" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\image7.tiff" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Edge_Chord_Error.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Edge_Normal_Vector.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Engine2D_Body_World_Coords.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Engine2D_Decorated_Vertexes.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_2.css" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Architecture_MVC.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Build_Process.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Controller_Classes.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Graph_Classes.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Model_Classes.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Subject_Observer_Classes.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_View_Classes.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Polygon_Special_Edge.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Polygon_Vertex_Edge_List.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\RigidBodyCollision.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Subject_Observer_Parameters.svg" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Terminal_pic.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\backward.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\backward_gray.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\down.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\down_gray.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\Electronic_Chime-KevanGC-495939803.mp3" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\forward.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\forward_gray.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\license-fatcow.txt" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\license-kenney.txt" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\minus.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\minus_gray.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\myphysicsicon.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\myphysicslogo.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\next.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\pause.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\plus.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\plus_gray.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\rewind.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\target.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\target_gray.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\tipper.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\up.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\up_gray.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\images\ValidHTML401.png" />
+    <Content Include="physics\Neumann.myphysicslab\src\index.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\index_order.txt" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\app\EventHandler.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\app\MouseTracker.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\app\RigidBodyEventHandler.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\app\SimController.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\app\SimRunner.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\app\ViewPanner.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\ButtonControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\CheckBoxControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\CheckBoxControlBase.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\ChoiceControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\ChoiceControlBase.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\GroupControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\LabControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\LabelControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\NumericControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\NumericControlBase.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\SliderControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\TextControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\TextControlBase.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\controls\ToggleControl.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\AbstractEdge.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\CircleCircle.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\CircleStraight.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\CircularEdge.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\CollisionHandling.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\ComputeForces.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\ConcreteVertex.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Connector.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\ConnectorCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\ContactSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\CornerCornerCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\CornerEdgeCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\DebugEngine2D.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Edge.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\EdgeEdgeCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\EdgeGroup.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\EdgeRange.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\EdgeSet.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\ExtraAccel.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\ImpulseSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Joint.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\JointUtil.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\LocalCoords.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\PathEndPoint.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\PathJoint.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Polygon.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\RigidBody.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\RigidBodyCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\RigidBodySim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Rope.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Scrim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Shapes.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\StraightEdge.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\StraightStraight.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\test\CircularEdgeTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\test\EdgeSetTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\test\PolygonTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\test\RigidBodySimTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\test\StraightEdgeTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\test\UtilEngineTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\test\VertexTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\ThrusterSet.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\UtilEngine.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\UtilityCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Vertex.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\engine2D\Walls.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\AutoScale.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\DisplayAxes.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\DisplayGraph.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\EnergyBarGraph.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\GraphColor.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\GraphLine.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\GraphPoint.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\GraphStyle.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\VarsHistory.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\graph\VectorGraph.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\AbstractMassObject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\AbstractODESim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\AbstractSimObject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\AdaptiveStepSolver.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\AdvanceStrategy.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Arc.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Collision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\CollisionAdvance.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\CollisionSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\CollisionStats.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\CollisionTotals.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ConcreteLine.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ConcreteVariable.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ConstantForceLaw.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\CoordType.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\DampingLaw.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\DiffEqSolver.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\DiffEqSolverSubject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\EnergyInfo.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\EnergySystem.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\EulersMethod.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ExpressionVariable.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Force.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ForceLaw.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\FunctionVariable.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Gravity2Law.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\GravityLaw.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Impulse.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Line.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\MassObject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ModifiedEuler.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\NumericalPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ODEAdvance.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ODESim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ParametricPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Path.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\PathIterator.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\PathPoint.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\PointMass.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\RungeKutta.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\ShapeType.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\SimList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\SimObject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\SimpleAdvance.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Simulation.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Spring.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\test\ConcreteLineTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\test\EnergyInfoTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\test\NumericalPathTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\test\PointMassTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\test\SimListTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\test\SpringTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\test\VarsListTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\Variable.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\model\VarsList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\AbstractSubject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\AffineTransform.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Calculus.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\CircularList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Clock.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\ClockTask.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\ConcreteMemoList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\DoubleMath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\DoubleRect.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\EasyScriptParser.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\ErrorObserver.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\GenericEvent.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\GenericMemo.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\GenericObserver.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\GenericVector.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\HistoryIterator.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\HistoryList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\MemoList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Memorizable.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\MutableVector.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Observer.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Parameter.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\ParameterBoolean.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\ParameterNumber.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\ParameterString.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Parser.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Printable.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Random.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\RandomLCG.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Subject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\SubjectEvent.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\SubjectList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Terminal.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\AbstractSubjectTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\AffineTransformTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\CalculusTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\CircularListTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\ClockTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\ConcreteMemoListTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\DoubleMathTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\DoubleRectTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\EasyScriptParserTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\MutableVectorTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\ParameterBooleanTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\ParameterNumberTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\ParameterStringTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\RandomLCGTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\TerminalTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\TimerTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\UtilTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\test\VectorTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Timer.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Util.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\util\Vector.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\CoordMap.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayArc.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayClock.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayConnector.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayLine.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayList.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayObject.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayRope.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayShape.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplaySpring.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DisplayText.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DrawingMode.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\DrawingStyle.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\HorizAlign.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\LabCanvas.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\LabView.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\ScreenRect.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\SimView.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\CoordMapTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\DisplayLineTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\DisplayListTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\DisplayShapeTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\DisplaySpringTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\LabCanvasTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\ScreenRectTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\test\SimViewTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\lab\view\VerticalAlign.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\macros.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\macros_tab.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\macros_vert.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\AbstractApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\CommonControls.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\CompareGraph.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\CompareTimeGraph.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\StandardGraph1.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\TabLayout.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\TimeGraph1.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\TimeGraph2.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\common\VerticalLayout.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\BilliardsApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\BilliardsApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\BlankApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\BlankApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\CarSuspensionApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\CarSuspensionApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\CartPendulum2App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\CartPendulum2App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ChainApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ChainApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ChainConfig.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ContactApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ContactApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\CurvedTestApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\CurvedTestApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\DoNothingApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\DoNothingApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\DoublePendulum2App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\DoublePendulum2App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ElasticitySetter.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\Engine2DApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\FastBallApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\FastBallApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\GearsApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\GearsApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\GearsConfig.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ImpulseApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\ImpulseApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\MarsMoonApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\MarsMoonApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\MultipleCollisionApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\MultipleCollisionApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\MutualAttractApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\MutualAttractApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\NewtonsCradleApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\NewtonsCradleApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PendulumClockApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PendulumClockApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PendulumClockConfig.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PendulumSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PendulumSpringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PileApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PileApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PileAttractApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PileAttractApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PileConfig.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PolygonTestApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\PolygonTestApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\RigidBodyApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\RigidBodyApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\RigidBodyObserver.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\RobotSpeedApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\RobotSpeedApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\RotatingTestForce.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\SixThrusters.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\TestBodyApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\engine2D\TestBodyApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\BikeTimerApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\BikeTimerApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\BlankSlateApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\BlankSlateApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\CollisionCombo.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\GraphCalc2App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\GraphCalc2App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\GraphCalcApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\GraphCalcApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\MultiGraphCalc2App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\SimpleApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\experimental\SimpleApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\DisplayMagnetWheel.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\DisplayRobotWheel.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\MagnetWheel.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\MagnetWheelApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\MagnetWheelApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\MagnetWheelSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\RobotSpeedApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\RobotSpeedApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\misc\RobotSpeedSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\AbstractShape.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\StringAdvance.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\StringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\StringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\StringPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\StringShape.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\StringShapes.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pde\StringSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\CartPendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\CartPendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\CartPendulumSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\CompareDoublePendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\CompareDoublePendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\ComparePendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\ComparePendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\DoublePendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\DoublePendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\DoublePendulumSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\MoveableDoublePendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\MoveableDoublePendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\MoveableDoublePendulumSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\MoveablePendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\MoveablePendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\MoveablePendulumSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\PendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\PendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\PendulumSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\ReactionPendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\ReactionPendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\ReactionPendulumSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\RigidDoublePendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\RigidDoublePendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\RigidDoublePendulumSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\test\DoublePendulumTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\VectorGraphPendulumApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\pendulum\VectorGraphPendulumApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\AbstractPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\BrachistoApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\BrachistoApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\BrachistoObserver.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\BrachistoPaths.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\BrachistoSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\CardioidPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\CirclePath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\CustomPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\FlatPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\HasPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\HumpPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\LagrangeRollerApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\LagrangeRollerApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\LagrangeRollerSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\LemniscatePath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\LoopTheLoopPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\OvalPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\PathObserver.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\PathSelector.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RigidBodyRollerApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RigidBodyRollerApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerDoubleApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerDoubleApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerDoubleSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerFlightApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerFlightApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerFlightSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerSingleApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerSingleApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerSingleSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\RollerSpringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\SpiralPath.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\roller\test\RollerTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\BlockCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\ChainOfSpringsApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\ChainOfSpringsApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\ChainOfSpringsSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\CollideBlocksApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\CollideBlocksApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\CollideBlocksSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\CollideSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\CollideSpringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\CollideSpringSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\DangleStickApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\DangleStickApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\DangleStickSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Double2DSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Double2DSpringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Double2DSpringSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\DoubleSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\DoubleSpringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\DoubleSpringSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule1App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule1App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule1Sim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule3App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule3App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule3Sim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule4App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule4App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule4Sim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule5App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule5App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule6App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Molecule6App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\MoleculeCollision.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\MultiSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\SingleSpring2App.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\SingleSpring2App.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\SingleSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\SingleSpringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\SingleSpringSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Spring2DApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Spring2DApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\Spring2DSim.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\SpringNonLinear.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\SpringNonLinear2.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\TerminalSpring2DApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\TerminalSpringApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\TerminalSpringApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\sims\springs\test\SingleSpringTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\stylesheet.css" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\CircleCircleTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\CircleStraightTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\DoNothingTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\Engine2DTestRig.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\Engine2DTests.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\Engine2DTests.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\ExpectedPerf.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\JointTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\macros_test.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\MiscellanyTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\MultipleCollisionTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\PerformanceTests.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\PerformanceTests.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\PileTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\RopeTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\SingleTest.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\SingleTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\SingleViewerApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\SingleViewerApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\SpeedTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\StraightStraightTest.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\StuckTestApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\StuckTestApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\TestRig.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\TestShapes.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\TestViewerApp.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\TestViewerApp.js" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\UnitTest.html" />
+    <Content Include="physics\Neumann.myphysicslab\src\test\UnitTest.js" />
+    <Content Include="physics\physicslab.old\common\backward_gray.png" />
+    <Content Include="physics\physicslab.old\common\down_gray.png" />
+    <Content Include="physics\physicslab.old\common\forward.png" />
+    <Content Include="physics\physicslab.old\common\forward_gray.png" />
+    <Content Include="physics\physicslab.old\common\minus_gray.png" />
+    <Content Include="physics\physicslab.old\common\myphysicslogo.png" />
+    <Content Include="physics\physicslab.old\common\next.png" />
+    <Content Include="physics\physicslab.old\common\pause.png" />
+    <Content Include="physics\physicslab.old\common\plus_gray.png" />
+    <Content Include="physics\physicslab.old\common\rewind.png" />
+    <Content Include="physics\physicslab.old\common\stylesheet1.css" />
+    <Content Include="physics\physicslab.old\common\target_gray.png" />
+    <Content Include="physics\physicslab.old\common\up_gray.png" />
+    <Content Include="physics\physicslab.old\common\ValidHTML401.png" />
+    <Content Include="physics\physicslab.old\pendulum\dbl_pendulum.gif" />
+    <Content Include="physics\physicslab.old\pendulum\dbl_pendulum_m1.gif" />
+    <Content Include="physics\physicslab.old\pendulum\dbl_pendulum_m2.gif" />
+    <Content Include="physics\physicslab.old\pendulum\double-pendulum-en.html" />
+    <Content Include="physics\physicslab.old\pendulum\DoublePendulumApp-en.js" />
+    <Content Include="physics\physicslab.old\src\sims\common\CommonControls.js" />
+    <Content Include="physics\physicslab\common\modules\canvas.js" />
+    <Content Include="physics\physicslab\common\modules\graphs.js" />
+    <Content Include="physics\physicslab\common\modules\graphs\cartesian.js" />
+    <Content Include="physics\physicslab\labs\mandlebrotGL\index.html" />
+    <Content Include="physics\physicslab\labs\mandlebrotGL\main.js" />
+    <Content Include="physics\physicslab\labs\mandlebrot\index.html" />
+    <Content Include="physics\physicslab\labs\mandlebrot\main.js" />
+    <Content Include="physics\physicslab\labs\mandlebrot\modules\mandelbrot-set-generator.js" />
+    <Content Include="physics\physicslab\labs\pendulum\index.html" />
+    <Content Include="physics\physicslab\labs\pendulum\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.mandelbrot-active\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.mandelbrot-active\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.mandelbrot\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.mandelbrot\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28ex3%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28ex3%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28ex2%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28ex2%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28ex1%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28ex1%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28moreattr%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28moreattr%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28uniforms-animated%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28uniforms-animated%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28uniforms%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28uniforms%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28inout%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders%28inout%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.shaders\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-rectangle%28ebo%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-rectangle%28ebo%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-rectangle%28tristrip%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-rectangle%28tristrip%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-rectangle%28dupv%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-rectangle%28dupv%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-triangle%28vbo%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-triangle%28vbo%29\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL\main.js" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-triangle%28vao%29\index.html" />
+    <Content Include="physics\physicslab\labs\WebGL.hello-triangle%28vao%29\main.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="physics\Neumann.myphysicslab\src\.vs\ProjectSettings.json" />
+    <Content Include="physics\Neumann.myphysicslab\src\.vs\slnx.sqlite" />
+    <Content Include="physics\Neumann.myphysicslab\src\.vs\src\v16\.suo" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Architecture.md" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Baraff_Fast_Contact_Force_94.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Baraff_Siggraph_97_Course_Notes.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Brachistochrone_Curves.nb" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Brachistochrone_Curves.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Building.md" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_circle_circle_edge.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_circle_circle_edge.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_Curved_Edge_Physics.aux" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_Curved_Edge_Physics.out" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_Curved_Edge_Physics.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_Curved_Edge_Physics.tex" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_Equiv_U_R_Vectors.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_Equiv_U_R_Vectors.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_sliding_curved_edge.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_sliding_curved_edge.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_straight_circle_edge.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_straight_circle_edge.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_vertex_circle_edge.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_vertex_circle_edge.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_vertex_straight_edge.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\CEP_vertex_straight_edge.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\ContactSim_Math.md" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Customizing.md" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DangleStick.nb" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DangleStick.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\DisplayPolygon_Image.graffle\data.plist" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\doc_start.md" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Double_Pendulum.nb" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Double_Pendulum.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Edge_Chord_Error.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Edge_Normal_Vector.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Engine2D.md" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Engine2D_Body_World_Coords.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Engine2D_Decorated_Vertexes.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Architecture_MVC.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Build_Process.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Controller_Classes.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Graph_Classes.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Model_Classes.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_Subject_Observer_Classes.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Overview_View_Classes.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Parabola_Path_Length.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Parabola_Path_Length.tex" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Polygon_Special_Edge.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Polygon_Vertex_Edge_List.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\RigidBodyCollision.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Rigid_Double_Pendulum.aux" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Rigid_Double_Pendulum.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Rigid_Double_Pendulum.tex" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Rigid_Double_Pendulum_Algebra.nb" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Rigid_Double_Pendulum_Algebra.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Rigid_Double_Pendulum_fig_1.graffle" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Rigid_Double_Pendulum_fig_1.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\RollerCoaster_Lagrangian.nb" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\RollerCoaster_Lagrangian.pdf" />
+    <Content Include="physics\Neumann.myphysicslab\src\docs\Subject_Observer_Parameters.graffle" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="physics\physicslab\common\modules\controls\" />
+    <Folder Include="physics\physicslab\common\modules\math\" />
+    <Folder Include="physics\physicslab\common\modules\models\" />
+    <Folder Include="physics\physicslab\common\modules\physics\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61209</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44356/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44356/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
