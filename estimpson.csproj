@@ -655,11 +655,11 @@
     <Content Include="physics\physicslab\common\modules\canvas.js" />
     <Content Include="physics\physicslab\common\modules\graphs.js" />
     <Content Include="physics\physicslab\common\modules\graphs\cartesian.js" />
-    <Content Include="physics\physicslab\labs\mandlebrotGL\index.html" />
-    <Content Include="physics\physicslab\labs\mandlebrotGL\main.js" />
-    <Content Include="physics\physicslab\labs\mandlebrot\index.html" />
-    <Content Include="physics\physicslab\labs\mandlebrot\main.js" />
-    <Content Include="physics\physicslab\labs\mandlebrot\modules\mandelbrot-set-generator.js" />
+    <Content Include="physics\physicslab\labs\mandelbrotGL\index.html" />
+    <Content Include="physics\physicslab\labs\mandelbrotGL\main.js" />
+    <Content Include="physics\physicslab\labs\mandelbrot\index.html" />
+    <Content Include="physics\physicslab\labs\mandelbrot\main.js" />
+    <Content Include="physics\physicslab\labs\mandelbrot\modules\mandelbrot-set-generator.js" />
     <Content Include="physics\physicslab\labs\pendulum\index.html" />
     <Content Include="physics\physicslab\labs\pendulum\main.js" />
     <Content Include="physics\physicslab\labs\WebGL.mandelbrot-active\index.html" />
